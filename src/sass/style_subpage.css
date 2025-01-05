@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap");
+.subpage_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  justify-content: space-around;
+}
+
+.subpage_gallery figure {
+  margin-top: 20vh;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+.subpage_gallery p {
+  margin-top: 0;
+}
+.subpage_gallery .subpage_description {
+  margin: 1em;
+}
+.subpage_gallery img {
+  margin: -1em;
+  width: 100vw; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+h2 {
+  font-family: Imbue;
+  font-weight: 900;
+  font-size: var(--font-xlarge);
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: var(--font-xsmall);
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: rgb(255, 0, 0);
+}
+
+p {
+  font-size: var(--font-small);
+}/*# sourceMappingURL=style_subpage.css.map */

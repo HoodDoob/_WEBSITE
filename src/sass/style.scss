@@ -42,7 +42,9 @@ button {
   display: inline-block; /* Allows the button to wrap content like an image */
   cursor: pointer; /* Ensures it still looks clickable */
 }
-
+header a {
+  color: inherit;
+}
 #topname {
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -176,11 +178,13 @@ button {
   /* width: 100%; */
   justify-content: space-around;
 }
-figure {
+.image-gallery figure {
+  margin: -1em;
   margin-top: 20vh;
-  p {
-    margin: -1em;
-  }
+}
+.image-gallery p {
+  margin: 1em;
+  margin-top: 20vh;
 }
 
 /* Make the image fit within its container without being cropped */
@@ -191,8 +195,14 @@ figure {
 }
 
 /* Ensure the image resizes correctly */
-.image {
+.image-gallery .image_vertical {
   width: 70vw; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin-bottom: 2px; /* Space between image and caption */
+}
+.image-gallery .image_horizontal {
+  width: 84vw; /* Make image responsive */
   height: auto; /* Maintain aspect ratio */
   display: block;
   margin-bottom: 2px; /* Space between image and caption */
