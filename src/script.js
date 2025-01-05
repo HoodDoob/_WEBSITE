@@ -1,5 +1,6 @@
 // Making pictures black and white on hover
 import { inView, animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
+// import { animate, scroll } from "motion"
 
 const burgerButton = document.querySelector("#burger_menu button");
 const burgerOverlay = document.querySelector("#burger_overlay");
@@ -23,3 +24,14 @@ burgerOverlay.addEventListener("click", (e) => {
     document.body.classList.remove("no-scroll");
   }
 });
+
+// ? arrow thing 
+const arrow = document.querySelector(".arrow_hover");
+
+// Ensure the arrow is selected and animate its opacity on scroll
+if (arrow) {
+  scroll(animate(arrow, { opacity: [1, 0] }, { ease: "linear" }), {
+    target: document.body, // Scrolling the whole page
+    offset: ["0px", "200px"], // Starts fading out at 0px and ends at 100px of scroll
+  });
+}

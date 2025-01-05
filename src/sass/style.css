@@ -84,6 +84,21 @@ button {
   z-index: 10;
 }
 
+.arrow_hover img {
+  animation: moveUpDown 2s ease-in-out infinite; /* Infinite loop for smooth motion */
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Start at the original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up by 10px */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
+}
 #burger_menu {
   position: fixed;
   margin-top: 21px;
