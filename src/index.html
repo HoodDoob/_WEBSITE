@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="sass/style.scss" />
+  <link rel="stylesheet" href="sass/style.css" />
   <title>Sporo Wody</title>
 </head>
 
@@ -25,13 +25,19 @@
     </ul>
   </section> -->
   <div id="burger_menu">
-    <img src=images/burgier.svg alt="burger menu icon">
-    <ul>
-      <li>About</li>
-      <li>Achievements</li>
-      <li>Works</li>
-      <li>Contact</li>
-    </ul>
+    <button id="burger_button" aria-label="Toggle menu">
+      <img src="images/burgier.svg" alt="Burger menu icon" class="burger-icon open">
+      <img src="images/burgier_X.svg" alt="Close menu icon" class="burger-icon close hidden">
+
+    </button>
+    <div id="burger_overlay">
+      <ul id="burger_list">
+        <li>About</li>
+        <li>Achievements</li>
+        <li>Works</li>
+        <li>Contact</li>
+      </ul>
+    </div>
   </div>
   <div class="arrow_hover">
     <img src=images/arrow3.svg alt="Image description">

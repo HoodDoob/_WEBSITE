@@ -1,28 +1,25 @@
 // Making pictures black and white on hover
 import { inView, animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
 
-const work_1 = document.querySelectorAll(".work_image");
+const burgerButton = document.querySelector("#burger_menu button");
+const burgerOverlay = document.querySelector("#burger_overlay");
+const openIcon = document.querySelector(".burger-icon.open");
+const closeIcon = document.querySelector(".burger-icon.close");
+burgerButton.addEventListener("click", () => {
+  burger_ul.classList.toggle("burgerState");
+});
 
-work_1.forEach((el) =>
-  el.addEventListener("mouseover", (event) => {
-    event.target.classList.toggle("blackWhite");
-  })
-);
-work_1.forEach((el) =>
-  el.addEventListener("mouseleave", (event) => {
-    event.target.classList.toggle("blackWhite");
-  })
-);
+// Toggle the overlay on burger button click
+burgerButton.addEventListener("click", () => {
+  burgerOverlay.classList.toggle("active");
+  openIcon.classList.toggle("hidden"); // Toggle burger icon
+  closeIcon.classList.toggle("hidden"); // Toggle close icon // Prevent scrolling when menu is open
+});
 
-//  animation that opens and closes burger menu
-
-const burger = document.querySelector("#burger_menu");
-const popup = document.querySelector("#popup");
-
-burger.addEventListener("click", animateBurger);
-function animateBurger() {
-  // popup.classList.toggle("animation_popIN");
-  // popup.classList.toggle("animation_popOUT");
-  // popup.classList.remove("hidden");
-  burger.classList.toggle('burgerOpened')
-}
+// Close the menu when clicking outside (optional)
+burgerOverlay.addEventListener("click", (e) => {
+  if (e.target === burgerOverlay) {
+    burgerOverlay.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  }
+});
