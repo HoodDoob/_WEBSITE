@@ -137,11 +137,14 @@ header a {
   width: 100%;
   height: 100%;
   background: var(--color-white);
+  flex-direction: column;
   z-index: 100;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
 }
 
 /* The menu on the left side */
@@ -156,6 +159,16 @@ header a {
 #burger_list li {
   padding: 16px;
   font-size: var(--font-medium);
+}
+
+#burger_socials {
+  display: grid;
+  padding: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+#burger_socials img {
+  margin-right: 16px;
+  margin-top: 20vh;
 }
 
 /* Visible state when toggled */
@@ -220,4 +233,20 @@ header a {
 /* Optional: Add hover effect for images */
 .image-link:hover .image {
   opacity: 0.8; /* Slightly dim the image on hover */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+}
+
+#footer_socials {
+  display: grid;
+  padding: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+#footer_socials img {
+  margin-right: 16px;
 }/*# sourceMappingURL=style.css.map */

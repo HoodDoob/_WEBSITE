@@ -14,12 +14,15 @@
     margin-inline-start: 0;
     margin-inline-end: 0;
   }
-  p {
-    margin-top: 0;
-  }
 
   .subpage_description {
     margin: 1em;
+  }
+  a {
+    margin: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    display: inline-block;
   }
   img {
     margin: -1em;
@@ -34,7 +37,7 @@ h2 {
   font-size: var(--font-xlarge);
   margin-bottom: 10px;
 }
-h3 {
+h4 {
   font-weight: 600;
   font-size: var(--font-xsmall);
   margin-top: 0px;
@@ -43,4 +46,8 @@ h3 {
 }
 p {
   font-size: var(--font-small);
+}
+.imageCopyright {
+  font-size: var(--font-xsmall);
+  text-align: end;
 }
