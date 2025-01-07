@@ -6,13 +6,35 @@
   justify-content: space-around;
 }
 
+.subpage_bottom {
+  align-items: center;
+}
+.subpage_bottom img {
+  max-width: 300px;
+  height: auto;
+}
+
 .subpage_gallery figure {
-  margin-top: 20vh;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  padding-top: 120px;
 }
 .subpage_gallery .subpage_description {
-  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.subpage_gallery .subpage_description ul {
+  list-style-position: inside;
+}
+.subpage_gallery #shows_padding {
+  padding-top: 120px;
+}
+.subpage_gallery #shows_padding h2 {
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+.subpage_gallery #shows_padding ul {
+  margin-block-start: 0;
 }
 .subpage_gallery a {
   margin: 0;
@@ -31,6 +53,7 @@ h2 {
   font-family: Imbue;
   font-weight: 900;
   font-size: var(--font-xlarge);
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -49,4 +72,23 @@ p {
 .imageCopyright {
   font-size: var(--font-xsmall);
   text-align: end;
+}
+
+@media only screen and (min-width: 900px) {
+  .subpage_gallery figure {
+    margin-top: 5vh;
+    padding-top: 0;
+  }
+  .subpage_gallery img {
+    width: 70vw;
+    margin: 0;
+  }
+  .subpage_gallery .subpage_description {
+    padding-top: 0;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  #shows_padding {
+    padding-top: 0;
+  }
 }/*# sourceMappingURL=style_subpage.css.map */

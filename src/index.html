@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="sass/style.css" />
-  <title>Sporo Wody</title>
+  <title>Hubert Kurkiewicz</title>
 </head>
 
 <body>
@@ -35,15 +35,17 @@
     </button>
     <div id="burger_overlay">
       <ul id="burger_list">
-        <li>About</li>
-        <li>Shows</li>
-        <li>"Stone Landscape" series</li>
-        <li>Sporo Wody</li>
-        <li>Contact</li>
+        <li><a href="subpages/about.html">About</a></li>
+        <li><a href="subpages/works.html">Works</a></li>
+        <li><a href="subpages/shows.html">Shows</a></li>
+        <li><a href="subpages/stone_landscape.html">Stone Landscapes</a></li>
+        <li><a href="subpages/sporowody.html">Sporo Wody</a></li>
+        <li><a href="subpages/contact.html">Contact</a></li>
       </ul>
       <div id="burger_socials">
-        <a href="www.instagram.pl"> <img src="images/burgier.svg" alt="Burger menu icon" class="burger-icon open"></a>
-        <a href="https://www.instagram.com"> <img src="images/burgier.svg" alt="Burger menu icon"
+        <a href="https://www.instagram.com/sporo.wody/"> <img src="images/social_instagram.svg" alt="Burger menu icon"
+            class="burger-icon open"></a>
+        <a href="mailto:hubert.kurkiewicz@gmail.com"> <img src="images/social_mail.svg" alt="Burger menu icon"
             class="burger-icon open"></a>
       </div>
     </div>
@@ -51,15 +53,27 @@
   <div class="arrow_hover">
     <img src=images/arrow3.svg alt="Image description">
   </div>
-  <div class="image-gallery">
-    <a href="works/szara_kamienica.html" class="image-link">
+  <div id="top-menu-container">
+    <ul id="top-menu">
+      <li><a href="subpages/about.html">About</a></li>
+      <li><a href="subpages/works.html">Works</a></li>
+      <li><a href="subpages/shows.html">Shows</a></li>
+      <li><a href="subpages/stone_landscape.html">Stone_Landscapes</a></li>
+      <li><a href="subpages/sporowody.html">Sporo_Wody</a></li>
+      <li><a href="subpages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="top-gallery">
+    <a href="subpages/about.html" class="image-link">
       <figure>
-        <img src=images/works/miami/miami_1.jpg alt="Image description" class="image image_vertical">
+        <img src=images/works/miami/miami_1.jpg alt="Image description" class="image image_vertical top_image">
       </figure>
     </a>
 
     <p>Polish artist born in ’97, currently based in Cracow, POLAND. Operating within forms of video, audio and
       interactivity.</p>
+  </div>
+  <div class="image-gallery" id="image-gallery">
 
 
     <a href="images/contact_1.jpg" class="image-link">
@@ -68,9 +82,11 @@
 
       </figure>
     </a>
+
     <a href="images/contact_1.jpg" class="image-link">
       <figure>
-        <img src=images/contact_1.jpg alt="Image description" class="image image_vertical">
+        <img src=images/work_a_2.jpg alt="Image description" class="image image_horizontal">
+
       </figure>
     </a>
     <a href="images/contact_1.jpg" class="image-link">
@@ -84,11 +100,12 @@
 </body>
 <footer>
   <div id="footer_socials">
-    <a href="www.instagram.pl"> <img src="images/burgier.svg" alt="Burger menu icon" class="burger-icon open"></a>
-    <a href="https://www.instagram.com"> <img src="images/burgier.svg" alt="Burger menu icon"
+    <a href="https://www.instagram.com/sporo.wody/"> <img src="images/social_instagram.svg" alt="Burger menu icon"
+        class="burger-icon open"></a>
+    <a href="mailto:hubert.kurkiewicz@gmail.com"> <img src="images/social_mail.svg" alt="Burger menu icon"
         class="burger-icon open"></a>
   </div>
-  <div id="backtotop"><a href="#top">Top</a></div>
+  <div id="backtotop"><a href="#top">^ Top</a></div>
 </footer>
 <script type="module" src="script.js"></script>
 
