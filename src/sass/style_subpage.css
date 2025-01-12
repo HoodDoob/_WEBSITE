@@ -26,9 +26,6 @@
 .subpage_gallery .subpage_description ul {
   list-style-position: inside;
 }
-.subpage_gallery #shows_padding {
-  padding-top: 10vh;
-}
 .subpage_gallery #shows_padding h2 {
   padding-top: 30px;
   margin-bottom: 0;
