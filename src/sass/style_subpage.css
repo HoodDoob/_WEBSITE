@@ -27,7 +27,7 @@
   list-style-position: inside;
 }
 .subpage_gallery #shows_padding {
-  padding-top: 120px;
+  padding-top: 10vh;
 }
 .subpage_gallery #shows_padding h2 {
   padding-top: 30px;
@@ -74,6 +74,13 @@ p {
   text-align: end;
 }
 
+#works_titleTest {
+  width: 100vw;
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 15vh;
+}
+
 @media only screen and (min-width: 900px) {
   .subpage_gallery figure {
     margin-top: 5vh;
@@ -90,5 +97,9 @@ p {
   }
   #shows_padding {
     padding-top: 0;
+  }
+  #works_titleTest {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 }/*# sourceMappingURL=style_subpage.css.map */

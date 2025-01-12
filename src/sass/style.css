@@ -212,7 +212,6 @@ header a {
   display: flex;
   flex-wrap: wrap;
   gap: 16px; /* Spacing between images */
-  padding-top: 15vh;
   justify-content: space-around;
 }
 
@@ -311,7 +310,6 @@ footer a {
     justify-content: center;
     margin-left: 7vw;
     margin-right: 7vw;
-    padding-top: 120px;
   }
   .image-gallery figure {
     margin-top: 3vh;
@@ -361,7 +359,8 @@ footer a {
   }
   .image-gallery {
     justify-content: space-around;
-    margin: 8vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
     align-items: center;
     padding-top: 0;
   }

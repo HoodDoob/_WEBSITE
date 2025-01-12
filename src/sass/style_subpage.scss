@@ -27,7 +27,7 @@
     }
   }
   #shows_padding {
-    padding-top: 120px;
+    padding-top: 10vh;
     h2 {
       padding-top: 30px;
       margin-bottom: 0;
@@ -70,7 +70,12 @@ p {
   font-size: var(--font-xsmall);
   text-align: end;
 }
-
+#works_titleTest {
+  width: 100vw;
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 15vh;
+}
 @media only screen and (min-width: 900px) {
   .subpage_gallery {
     figure {
@@ -89,5 +94,9 @@ p {
   }
   #shows_padding {
     padding-top: 0;
+  }
+  #works_titleTest {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 }
