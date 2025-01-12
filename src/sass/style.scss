@@ -180,6 +180,7 @@ header a {
 #burger_list {
   list-style: none;
   margin: 0;
+  margin-top: 10vh;
   padding: 0;
   width: 250px; // Set width for the menu
   background: var(--color-white); // Same as overlay
@@ -192,12 +193,13 @@ header a {
   // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 #burger_socials {
+  align-items: center;
   display: grid;
   padding: 16px;
   grid-template-columns: 1fr 1fr;
   img {
     margin-right: 16px;
-    margin-top: 20vh;
+    margin-top: 5vh;
   }
 }
 /* Visible state when toggled */
@@ -252,8 +254,8 @@ header a {
   margin-bottom: 2px; /* Space between image and caption */
 }
 .image-gallery .image_horizontal {
-  width: 84vw; /* Make image responsive */
-  max-width: 300px;
+  width: 90vw; /* Make image responsive */
+  max-width: 400px;
   height: auto; /* Maintain aspect ratio */
   display: block;
   margin-bottom: 2px; /* Space between image and caption */
@@ -281,6 +283,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 10px;
+  margin-top: 10vh;
   align-items: center;
   a {
     text-decoration: none;
@@ -362,7 +365,7 @@ footer {
     margin: 10vw;
   }
   .image-gallery {
-    justify-content: center;
+    justify-content: space-around;
     margin: 8vw;
     align-items: center;
     padding-top: 0;
